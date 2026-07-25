@@ -189,17 +189,33 @@ h1{
     align-items: center;
     gap: 60px;
     background-color: #FFFFFF;
-    padding: 80px;
+    padding: 120px 80px;
 }
-
-/* --- Side bar ---- */
+.blog_section h2{
+    text-align: center;
+}
+.blog-container{
+    display: grid;
+    gap: 35px;
+    grid-template-columns: 2fr 1fr;
+}
 .blog-card-sidebar{
+    grid-row: span 2;
     background: linear-gradient(135deg,#4CAEFE,#02EFFE);
     padding: 40px;
     border-radius: 16px;
     color: #eaeaea;
 }
+.blog-card-sidebar h3{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
 
+.blog-card-sidebar p{
+    margin-bottom: 20px;
+
+}
+/* --- Side bar ---- */
 .blog-card{
     background-color: #F8F9FA;
     border-radius: 16px;
