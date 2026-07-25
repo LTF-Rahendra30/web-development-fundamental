@@ -222,3 +222,75 @@ h1{
     padding: 20px;
     border-left: 4px solid #0066CC;
 }
+
+
+
+/* ========= CONTACT SECTION ========= */
+.contact_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* --- Form Box Model --- */
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.2 );
+}
+
+.form-container .from-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* --- Input & Label ---- */
+.form-container label{
+    font-weight: 600;
+    color: #0066CC;
+
+} 
+
+.form-container input,textarea{
+    padding: 6px;
+    max-width: 100%;
+    background-color: #c5c9e02c;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgba(161, 183, 251, 0.371);
+    font-family: inherit;
+}
+
+.from-item textarea{
+    resize: vertical;
+}
+/* Focus Input */
+.form-container input:focus,textarea:focus{
+    border: 1px solid #0832c9;
+    box-shadow: 0 0 10px rgba(77, 93, 217, 0.15);
+}
+
+/* ---- Button Contact ---- */
+.contact-container button{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0768f9;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact-container button:hover{
+    background-color: #0066CC;
+    transform: scale(1.03);
+    cursor: pointer;
+}
