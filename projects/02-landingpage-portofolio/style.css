@@ -361,7 +361,20 @@ footer{
     color: #dbdbdb;
     margin-bottom: 20px;
 }
+/*  Footer link */
+.footer_top .footer-link{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.footer_top .footer-link a{
+    color: #aeacac;
+    transition: 0.3s ease;
+}
+.footer_top .footer-link a:hover{
+    color: #4c91f9;
+}
 /* ---- Footer Bottom --- */
 .footer-bottom{
     display: flex;
