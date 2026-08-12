@@ -81,7 +81,7 @@
          Tugas: Atur min-height agar hero section tepat mengisi sisa tinggi viewport
                 (Tinggi layar penuh dikurangi tinggi navbar statis 70px) */
       /* min-height: TODO_1; */
-      min-height: 100vh;
+      min-height: calc(70px + 100%);
 
       /* CHALLENGE 4: Spacing Section Premium
          Tugas: Atur padding atas dan bawah agar membesar dinamis sesuai dimensi layar terbesar (vmax)
@@ -127,6 +127,7 @@
          Tugas: Atur font-size agar responsif terhadap lebar layar (vw),
                 tapi tidak boleh lebih kecil dari 2rem */
       /* font-size: TODO_2; */
+      font-size: calc(2rem + 2vw);
     }
 
     .hero-text p {
