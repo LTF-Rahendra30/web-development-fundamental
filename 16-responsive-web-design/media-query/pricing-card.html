@@ -189,7 +189,12 @@
               - Ubah '.card-grid' menjadi CSS Grid 2 Kolom (repeat(2, 1fr)) */
 
     /* TODO 4: Tulis @media (min-width: 48em) di sini! */
-
+    @media (min-width: 48em) {
+        .card-grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
 
     /* CHALLENGE 5: Desktop Breakpoint (@media min-width) & Math Function (max())
        Tugas: Tulis Media Query untuk layar lebar / Desktop (>= 64em / 1024px):
