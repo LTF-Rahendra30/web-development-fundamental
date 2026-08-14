@@ -202,6 +202,14 @@
               - Berikan pengaman lebar tombol '.plan-btn' menggunakan max(160px, 80%) agar presisi */
 
     /* TODO 5: Tulis @media (min-width: 64em) di sini! */
+    @media (min-width: 64em) {
+        .card-grid{
+            grid-template-columns: repeat(3,1fr);
+        }
+        .plan-btn{
+            width: max(160px,80% );
+        }
+    }
 
   </style>
 </head>
