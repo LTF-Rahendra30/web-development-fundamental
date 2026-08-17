@@ -104,14 +104,18 @@
        ========================================================================== */
     .course-card {
       /* TODO 4a: Buat variabel fragmen lokal sebagai warna tema default di mobile beri nilai 220 (Hue warna biru) */
-
+      --hue: 220;
+      --sat: 35%;
+      --light: 15%;
 
       /* TODO 4b: Gunakan fungsi hsl() untuk menggabungkan fragmen tema warna tadi menjadi background HSL yang lebih lembut dengan saturasi 35% dan lightness 15%, lalu tambahkan border dengan hsl() menggunakan hue yang sama, saturasi 60%, dan lightness 30% */
-      background-color: #1e293b;
+      --brand-soft: hsl(var(--hue),var(--sat),var(--light));
+      
+      background-color: var(--brand-soft);
       /* Ubah nilainya */
-      border: 2px solid #334155;
+      border: 2px solid hsl(var(--hue),60%,30%);
       /* Ubah nilainya */
-      border-radius: 16px;
+      border-radius: var(--radius-medium);
       padding: 28px;
       box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
       transition: all 0.4s ease;
