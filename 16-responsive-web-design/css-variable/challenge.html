@@ -95,7 +95,9 @@
     }
 
     /* TODO 3b: Gunakan fitur media query untuk mendeteksi layar sentuh (coarse pointer), lalu timpa variabel touch target sebelumnya menjadi 44px sesuai standar Apple HIG */
-
+    @media (pointer: coarse) {
+        
+    }
 
     /* ==========================================================================
        TODO 2 & 4: COMPONENT ISOLATION & VARIABLE FRAGMENTS (.course-card)
@@ -177,18 +179,22 @@
     /* TODO 2: COMPONENT ISOLATION TOMBOL (.btn-enroll) */
     .btn-enroll {
       /* TODO 2a: Buat variabel local untuk menampung nilai warna background dari variabel global warna utama */
-
+        --btn-bg: var(--primary-color);
+        --btn-height: var(--min-button-height);
+        --btn-radius: var(--radius-medium);
+        --btn-hover: var(--primary-color-dark);
 
       /* TODO 2b: Terapkan properti background-color, border-radius, dan height menggunakan variabel lokal yang sudah disiapkan di atas. Ingat, penulisan properti ini CUMA 1 KALI! */
+      
       font-family: inherit;
       font-size: 0.95rem;
       font-weight: 600;
       color: #ffffff;
-      background-color: #3b82f6;
+      background-color: var(--btn-bg);
       border: none;
-      border-radius: 8px;
+      border-radius: var(--btn-radius);
       padding: 0 20px;
-      height: 36px;
+      height: var(--btn-height);
       min-height: 36px;
 
       cursor: pointer;
@@ -201,8 +207,9 @@
 
     /* TODO 2c: Ubah properti background-color menjadi menggunakan variabel lokal yang sudah disiapkan di atas, isi nilainya dari properti global untuk warna gelap */
     .btn-enroll:hover {
-      background-color: #1d4ed8;
+      /* background-color: #1d4ed8; */
       /* Ubah ini */
+      --btn-bg: var(--btn-hover);
     }
 
 
