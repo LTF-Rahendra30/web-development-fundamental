@@ -92,11 +92,13 @@
         --radius-medium: 12px;
       /* TODO 3a: Buat variabel global untuk menetapkan standar tinggi tombol default sebesar 36px saat diakses menggunakan mouse (touch target) */
         --min-button-height: 36px;
-    }
-
-    /* TODO 3b: Gunakan fitur media query untuk mendeteksi layar sentuh (coarse pointer), lalu timpa variabel touch target sebelumnya menjadi 44px sesuai standar Apple HIG */
-    @media (pointer: coarse) {
-        
+      }
+      
+      /* TODO 3b: Gunakan fitur media query untuk mendeteksi layar sentuh (coarse pointer), lalu timpa variabel touch target sebelumnya menjadi 44px sesuai standar Apple HIG */
+    @media(pointer: coarse) {
+      :root{
+        --min-button-height: 44px;
+      }
     }
 
     /* ==========================================================================
