@@ -8,8 +8,8 @@
     --color-text-main: #f1f5f9;
     --color-text-muted: #cbd5e1;
     --border-color: #1e293b;
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: "Poppins", sans-serif;
+    --font-body: "Inter", sans-serif;
     --section-padding: 60px 20px;
     --container-max-width: 1200px;
 }
@@ -33,7 +33,7 @@ ul{
 body{
     background: var(--bg-dark);
     color: #cbd5e1;
-    font-family: "Inter",sans-serif;
+    font-family: var(--font-body),sans-serif;
     min-width: 100vh;
     line-height: 1.6;
 }
@@ -43,7 +43,7 @@ section{
 }
 /* ====== TYPOGRAPHY ===== */
 h1{
-    font-family: "Poppins",sans-serif;
+    font-family: var(--font-heading),sans-serif;
     color: #fff;
     font-size: 2.5em;
 }
@@ -52,7 +52,7 @@ h1{
     color:var(--color-cyan);
     font-size: 1.8em;
     font-weight: bolder;
-    font-family: "Poppins",sans-serif;
+    font-family: var(--font-heading),sans-serif;
 }
 /* --- Margin in Every Section ---- */
 
