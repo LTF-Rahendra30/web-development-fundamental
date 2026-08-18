@@ -97,7 +97,12 @@ h1{
     color: var(--color-cyan);
 }
 
-
+/* ========= MAIN ============= */
+main{
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 20px;
+}
 /* ============ HERO SECTION ============== */
 
 .hero-section{
@@ -180,7 +185,7 @@ main .about-section .about-content p{
 /* ---- CARD ------- */
 .lineup-section .lineup-container{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
     
