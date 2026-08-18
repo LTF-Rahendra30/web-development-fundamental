@@ -60,8 +60,9 @@ h1{
 
 /* =========== NAVBAR & HEADER =========== */
 .site-header{
-    padding: 15px 50px;
-    background-color: #0f192f;
+    padding: 1em 2em;
+    background-color: var(--bg-header);
+    border: 2px solid #1e293b;
     display: flex;
     justify-content: space-between;
     align-items: center;
