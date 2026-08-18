@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    list-style: none;
+
+}
+body{
+    background: #0f172a;
+    color: #cbd5e1;
+    font-family: "Inter",sans-serif;
+    min-width: 100vh;
+    line-height: 1.6;
+}
+
+section{
+    padding: 80px 0;
+}
+/* ====== TYPOGRAPHY ===== */
+h1{
+    font-family: "Poppins",sans-serif;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+:is(h2,h3,h4){
+    color:#2FADC7 ;
+    font-size: 1.8em;
+    font-weight: bolder;
+    font-family: "Poppins",sans-serif;
+}
+/* --- Margin in Every Section ---- */
+
+
+
+/* =========== NAVBAR & HEADER =========== */
+.site-header{
+    padding: 15px 50px;
+    background-color: #0f192f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+}
+/* Nav Link */
+
+.site-header .site-navbar{
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+}
+.nav-link{
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+.site-header .site-navbar .nav-link:hover{
+    background-color: #1AACBD;
+    transform: translateY(-3px);
+    
+}
+.site-header .site-title{
+    flex-shrink: 0;
+    font-size: 1.8em;
+    color: #18A7C1;
+}
+
+
+/* ============ HERO SECTION ============== */
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 40px;
+    margin: 30px 20px;
+    background: linear-gradient(to bottom, #162341,#111a30);
+    border-bottom: 2px solid #172441;
+    border-radius: 10px;
+}
+
+main .hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* ---- Get ticket Button ----- */
+main .hero-content .hero__ticket__button{
+    padding: 12px 26px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: #03B6D4;
+    box-shadow: 0 0 20px rgba(2, 104, 213, 0.3);
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+main .hero-content .hero__ticket__button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+}
+
+
+/* ========== ABOUT SECTION ======= */
+
+main .about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px;
+    margin: 30px 20px;
+    margin-bottom: 40px;
+    background-color: #111a30;
+    border-radius: 10px;
+    border-bottom: 2px solid #172441;
+    border-top: 2px solid #172441;
+    text-indent: 3em;
+}
+
+main .about-section .about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+main .about-section .about-content p{
+    margin-bottom: 20px;
+}
+
+/* ======= LINEUP ========== */
+.lineup-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin: 30px 50px;
+}
+/* ---- CARD ------- */
+.lineup-section .lineup-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.lineup-section .lineup-container .artis-card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 300px;
+    text-align: center;
+    align-items: center;
+    gap: 25px;
+    padding: 60px 30px 30px 30px;
+    background-color: #1D293B;
+    border-radius: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* ------- Card hover ---- */
+.lineup-section .lineup-container .artis-card:hover{
+    transform: translateY(-4px);
+    border: 1px solid #06b6d4;
+    box-shadow: 4px 6px 10px rgba(47, 173, 251, 0.4);
+    cursor: pointer;
+}
+.lineup-section .lineup-container .artis-card .artist-card-title{
+    color: #fff;
+    font-size: 1.4em;
+}
+/* Artist Photo */
+.lineup-section .lineup-container .artis-card figure img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #06b6d4;
+}
+
+/* Live Bagde */
+.lineup-section .lineup-container .artis-card .live-badge{
+    font-size: 12px;
+    padding: 6px 10px;
+    background-color: #fe4a4a;
+    font-weight: bold;
+    border-radius: 25px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+/* -------- Genre Capsule ----- */
+.artis-card .genre-container{
+    display: flex;
+    gap: 12px;
+}
+.artis-card .genre-container .genre-capsule{
+    padding: 4px 10px;
+    background-color: #03B6D4;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+
+/* =========== SCHEDJULE SECTION ======== */
+
+.schedule-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.schedule-section table{
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+    background-color: #1D293B;
+}
+/* ---- Table Content --- */
+.schedule-section table th,td{
+    padding: 14px;
+    color: #fcfbfb;
+    border-bottom: 1px solid #334155;
+}
+/* -------- head table ------ */
+
+.schedule-section table thead .table-head-content th{
+    background-color: #04B7D3;
+    color: #111a30;
+}
+
+/* Zebra Color evry tr */
+.schedule-section table tbody tr:nth-child(even){
+    background-color: #243147;
+}
+
+.schedule-section table tbody tr:hover{
+    background-color: #243a68;
+    cursor: pointer;
+}
+
+
+/* ======= FORM ====== */
+
+/* ---Ticket COntainer ---- */
+.ticket-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.ticket-section .from-container{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px;
+    background-color: #162341;
+    border-radius: 16px;
+}
+
+.ticket-section .from-container .from-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.from-container .from-item .type-ticket-form{
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Label title ---- */
+.label-title{
+    font-weight: 600;
+}
+.from-container input,select{
+    padding: 8px 10px;
+    max-width: 100%;
+    background: #011238;
+    color: #eaeaea;
+    outline: none;
+    border-radius: 8px;
+    font-family: inherit;
+    border: 1px solid rgba(161, 251, 251, 0.371);
+}
+
+
+/*  -- Active Effect -- */
+input:focus, select:focus{
+    border-color: #4dd9d9;
+    box-shadow: 0 0 10px rgba(77, 217, 217, 0.15);
+}
+
+/* Buy Button */
+.button{
+    border: none;
+    outline: none;
+}
+.ticket-section .buy-button{
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 15px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #03B6D4;
+    transition: 0.3s ease;
+}
+.ticket-section .buy-button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+    cursor: pointer;
+}
+
+
+/* ====== Gallery Section ========*/
+.gallery-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.gallery-section .gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+/* ---- Galery Caed ---- */
+
+.gallery-section .gallery-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1D293B;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 30px;
+
+}
+/* Image gallery */
+.gallery-card figure{
+    border-radius: 10px;
+    overflow: hidden;
+    
+    flex: 0 0 45%;
+    min-height: 250px;
+}
+.gallery-card figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+
+/* ========== FOOTER ========= */
+footer{
+    padding: 50px 80px;
+    background-color: #162341;
+}
+
+footer .footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #3c4559;
+    gap: 20px;
+}
+/* Footer Logo*/
+.footer-top .footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-top .footer-logo h2{
+    font-size: 1.7em;
+    flex: 1.5;
+}
+
+
+.footer-title{
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* ---- Footer top Link ---- */
+
+.footer-top .footer-link .footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-list li a{
+    color: #cbd5e1;
+    transition: 0.3s ease;
+}
+.footer-list li a:hover{
+    color: #03B6D4;
+}
+/* --- Footer Bottom --- */
+footer .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-bottom .footer-legal{
+    display: flex;
+    gap: 14px;
+}
+.footer-bottom .footer-legal a{
+    transition: 0.3s ease;
+    color: #cbd5e1;
+}
+.footer-bottom .footer-legal a:hover{
+    color: #fff;
+}
+
+/* ---- Floating Ticket button ------ */
+.flooating-ticket-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #fde047;
+    color: #0f172a;
+    padding: 8px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow:0 4px 10x rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+}
+
+.flooating-ticket-btn:hover{
+    background-color: #facc15;
+    
+}
