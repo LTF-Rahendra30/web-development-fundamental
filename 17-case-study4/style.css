@@ -5,9 +5,10 @@
     --bg-card: #1e293b;
     --bg-header: rgba(15, 23, 42, 0.9);
     --color-cyan: #06b6d4;
+    --title-main:#fff;
     --color-text-main: #f1f5f9;
     --color-text-muted: #cbd5e1;
-    --border-color: #1e293b;
+    --border-color: #37455e;
     --font-heading: "Poppins", sans-serif;
     --font-body: "Inter", sans-serif;
     --section-padding: 60px 20px;
@@ -33,7 +34,7 @@ ul{
 }
 body{
     background: var(--bg-dark);
-    color: #cbd5e1;
+    color: var(--color-text-muted);
     font-family: var(--font-body),sans-serif;
     min-width: 100%;
     line-height: 1.6;
@@ -50,7 +51,7 @@ section{
 }
 h1{
     font-family: var(--font-heading),sans-serif;
-    color: #fff;
+    color: var(--title-main);
     font-size: clamp(2rem,5vw + 1rem,3rem);
 }
 
@@ -62,7 +63,7 @@ section h3{
 }
 h4{
     font-size: clamp(1.2rem,1.5vw + 0.5rem,1.4rem);
-    color: #fff;
+    color: var(--title-main);
 }
 
 /* --- Parapgraph --- */
@@ -278,8 +279,8 @@ main .about-section .about-content p{
 /* ---- Table Content --- */
 .schedule-section table th,td{
     padding: 14px;
-    color: #fcfbfb;
-    border-bottom: 1px solid #334155;
+    color: var(--color-text-main);
+    border-bottom: 1px solid var(--border-color);
 }
 /* -------- head table ------ */
 
@@ -339,7 +340,7 @@ main .about-section .about-content p{
     padding: 8px 10px;
     max-width: 100%;
     background: var(--bg-dark);
-    color: #eaeaea;
+    color: var(--color-text-main);
     outline: none;
     border-radius: 8px;
     font-family: inherit;
@@ -363,7 +364,7 @@ input:focus, select:focus{
     width: 100%;
     border-radius: 15px;
     font-weight: bold;
-    color: #fff;
+    color: var(--title-main);
     background-color: var(--color-cyan);
     transition: 0.3s ease;
 }
@@ -426,7 +427,7 @@ footer .footer-top{
     align-items: center;
     padding-bottom: 40px;
     margin-bottom: 40px;
-    border-bottom: 1px solid #3c4559;
+    border-bottom: 1px solid var(--border-color);
     gap: 20px;
 }
 /* Footer Logo*/
