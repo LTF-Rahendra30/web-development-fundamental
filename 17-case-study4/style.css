@@ -87,12 +87,31 @@ p{
     z-index: 9999;
     top: 0;
 }
-/* Nav Link */
 
-.site-header .site-navbar{
+
+/* ===== NAVBAR MOBILE DISPLAY =====*/
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border-color);
+    display: none;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+/*  ====== Desktop ===== */
+.site-header .site-navbar ul{
     display: flex;
     align-items: center;
-    
     gap: 10px;
 }
 .nav-link{
@@ -111,6 +130,33 @@ p{
     flex-shrink: 0;
     font-size: 1.8em;
     color: var(--color-cyan);
+}
+
+/* ===== HUMBERGER NAVBAR FOR MOBILE ===== */
+.menu-toggle {
+    display: none;
+}
+.site-header .hamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.75rem; /* 28px */
+    height: 1.25rem; /* 20px */
+    cursor: pointer;
+    z-index: 1001;
+}
+.site-header .hamburger span{
+    width: 100%;
+    height: 3px;
+    background-color: var(--title-main);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+
+/* --- Navbar Displayed when checked */
+.menu-toggle:checked ~ nav {
+    display: block;
 }
 
 /* ========= MAIN ============= */
