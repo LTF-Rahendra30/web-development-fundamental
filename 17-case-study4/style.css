@@ -608,3 +608,21 @@ footer .footer-bottom .footer-legal{
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/* ====== Interaction Query ======= */
+
+@media (hover: hover){
+    nav ul a:hover{
+        background-color: var(--color-cyan);
+    }
+
+    /* ===== Line Up ===== */
+    .lineup-section .lineup-container .artis-card:hover{
+        border: 1px solid var(--color-cyan);
+        box-shadow: 4px 6px 10px rgba(47, 173, 251, 0.4);
+    }
+
+    /* === Get Tiicket Hero === */
+    main .hero-content .hero__ticket__button:hover{
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    }
+}
