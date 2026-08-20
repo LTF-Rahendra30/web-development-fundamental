@@ -96,10 +96,7 @@ p{
     transition: 0.3s ease;
     border-radius: 10px;
 }
-.site-header .site-navbar .nav-link:hover{
-    background-color: var(--color-cyan);
-    
-}
+
 .site-header .site-title{
     flex-shrink: 0;
     font-size: 1.8em;
@@ -213,10 +210,6 @@ main .hero-content .hero__ticket__button{
     margin-top: 20px;
 }
 
-main .hero-content .hero__ticket__button:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
-}
 
 
 /* ========== ABOUT SECTION ======= */
@@ -277,13 +270,6 @@ main .about-section .about-content p{
     transition: transform 0.3s ease;
 }
 
-/* ------- Card hover ---- */
-.lineup-section .lineup-container .artis-card:hover{
-    transform: translateY(-4px);
-    border: 1px solid var(--color-cyan);
-    box-shadow: 4px 6px 10px rgba(47, 173, 251, 0.4);
-    cursor: pointer;
-}
 
 /* Artist Photo */
 .lineup-section .lineup-container .artis-card figure img{
@@ -351,10 +337,6 @@ main .about-section .about-content p{
     background-color: #243147;
 }
 
-.schedule-section table tbody tr:hover{
-    background-color: #243a68;
-    cursor: pointer;
-}
 
 
 /* ======= FORM ====== */
@@ -425,11 +407,7 @@ input:focus, select:focus{
     background-color: var(--color-cyan);
     transition: 0.3s ease;
 }
-.ticket-section .buy-button:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
-    cursor: pointer;
-}
+
 
 
 /* ====== Gallery Section ========*/
@@ -516,9 +494,7 @@ footer .footer-top{
     color: #cbd5e1;
     transition: 0.3s ease;
 }
-.footer-list li a:hover{
-    color: var(--color-cyan);
-}
+
 /* --- Footer Bottom --- */
 footer .footer-bottom{
     display: flex;
@@ -532,9 +508,7 @@ footer .footer-bottom .footer-legal{
     transition: 0.3s ease;
     color: #cbd5e1;
 }
-.footer-bottom .footer-legal a:hover{
-    color: #fff;
-}
+
 
 /* ---- Floating Ticket button ------ */
 .flooating-ticket-btn{
@@ -551,10 +525,6 @@ footer .footer-bottom .footer-legal{
     z-index: 99999;
 }
 
-.flooating-ticket-btn:hover{
-    background-color: #facc15;
-    
-}
 
 
 /* ========= FOR Tab ======== */
@@ -577,9 +547,6 @@ footer .footer-bottom .footer-legal{
         padding: 0;
     }
     
-    .site-header .site-navbar .nav-link:hover{
-        transform: translateY(-3px);
-    }
 
     /* ==== LINE UP === */
     .lineup-section .lineup-container, .gallery-section .gallery-grid{
@@ -610,9 +577,11 @@ footer .footer-bottom .footer-legal{
 }
 /* ====== Interaction Query ======= */
 
-@media (hover: hover){
-    nav ul a:hover{
+@media (hover: hover) and (pointer :fine){
+    /* === Navigation === */
+    .site-header .site-navbar .nav-link:hover{
         background-color: var(--color-cyan);
+        transform: translateY(-3px);
     }
 
     /* ===== Line Up ===== */
@@ -623,6 +592,41 @@ footer .footer-bottom .footer-legal{
 
     /* === Get Tiicket Hero === */
     main .hero-content .hero__ticket__button:hover{
+        transform: translateY(-3px);
         box-shadow: 0 0 20px rgba(0, 123, 255, 0.8);
+    }
+    /*  ---- Line Up ---- */
+    .lineup-section .lineup-container .artis-card:hover {
+        transform: translateY(-4px);
+        border: 1px solid var(--color-cyan);
+        box-shadow: 4px 6px 10px rgba(47, 173, 251, 0.4);
+        cursor: pointer;
+    }
+
+    /* Schedjule */
+    .schedule-section table tbody tr:hover{
+        background-color: #243a68;
+        cursor: pointer;
+}
+     /* --- Buy In Ticket Section --- */
+    .ticket-section .buy-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+        cursor: pointer;
+    }
+
+    /* ==== Footer ==== */
+    .footer-list li a:hover {
+        color: var(--color-cyan);
+    }
+
+    .footer-bottom .footer-legal a:hover {
+        color: var(--title-main);
+    }
+
+
+    /* Float Ticket */
+    .flooating-ticket-btn:hover {
+        background-color: #facc15;
     }
 }
