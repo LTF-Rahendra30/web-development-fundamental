@@ -335,7 +335,7 @@ main .about-section .about-content p{
 }
 /* ---- Table Content --- */
 .schedule-section table th,td{
-    padding: 14px;
+    padding: 10px;
     color: var(--color-text-main);
     border-bottom: 1px solid var(--border-color);
 }
@@ -588,5 +588,11 @@ footer .footer-bottom .footer-legal{
     }
     .lineup-section .lineup-container .artis-card{
         width: 100%;
+    }
+
+    /* ==== Padding Tabel === */
+    .schedule-section table th,.schedule-section table td{
+        padding: 15px;
+        font-size: 1rem;
     }
 }
