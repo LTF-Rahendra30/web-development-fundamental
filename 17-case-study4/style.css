@@ -88,6 +88,24 @@ p{
     top: 0;
 }
 
+.nav-link{
+    display: inline-block;
+    padding: 4px 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+.site-header .site-navbar .nav-link:hover{
+    background-color: var(--color-cyan);
+    
+}
+.site-header .site-title{
+    flex-shrink: 0;
+    font-size: 1.8em;
+    color: var(--color-cyan);
+}
+
 
 /* ===== NAVBAR MOBILE DISPLAY =====*/
 nav {
@@ -105,32 +123,9 @@ nav ul {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
-    gap: 1rem;
+    gap: 1.2rem;
 }
 
-/*  ====== Desktop ===== */
-.site-header .site-navbar ul{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.nav-link{
-    padding: 8px 16px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: 0.3s ease;
-    border-radius: 10px;
-}
-.site-header .site-navbar .nav-link:hover{
-    background-color: var(--color-cyan);
-    transform: translateY(-3px);
-    
-}
-.site-header .site-title{
-    flex-shrink: 0;
-    font-size: 1.8em;
-    color: var(--color-cyan);
-}
 
 /* ===== HUMBERGER NAVBAR FOR MOBILE ===== */
 .menu-toggle {
@@ -173,6 +168,8 @@ nav ul {
 .menu-toggle:checked ~ .hamburger span:nth-child(3) {
 transform: translateY(-8.5px) rotate(-45deg);
 }
+
+
 /* ========= MAIN ============= */
 main{
     max-width: var(--container-max-width);
@@ -556,4 +553,30 @@ footer .footer-bottom .footer-legal{
 .flooating-ticket-btn:hover{
     background-color: #facc15;
     
+}
+
+
+/* ========= FOR DEKSTOP ======== */
+@media (min-width: 48em){
+   .site-header .hamburger {
+        display: none; /* icon hamburger in PC/Tablet */
+    }
+
+    .site-header nav{
+        display: block;
+        position:static;
+        width: auto;
+        background-color: transparent;
+        border-bottom: none;
+    }
+
+    .site-header nav ul{
+        flex-direction: row;
+        gap: 20px;
+        padding: 0;
+    }
+    
+    .site-header .site-navbar .nav-link:hover{
+        transform: translateY(-3px);
+    }
 }
