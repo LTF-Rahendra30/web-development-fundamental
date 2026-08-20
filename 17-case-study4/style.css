@@ -441,9 +441,10 @@ input:focus, select:focus{
 }
 
 .gallery-section .gallery-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 25px;
+    padding: 0 20px;
 }
 /* ---- Galery Caed ---- */
 
@@ -581,7 +582,7 @@ footer .footer-bottom .footer-legal{
     }
 
     /* ==== LINE UP === */
-    .lineup-section .lineup-container{
+    .lineup-section .lineup-container, .gallery-section .gallery-grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
@@ -603,7 +604,7 @@ footer .footer-bottom .footer-legal{
 
 
     /* ===== Layout Linup & Gallery ==== */
-    .lineup-section .lineup-container{
+    .lineup-section .lineup-container, .gallery-section .gallery-grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }
