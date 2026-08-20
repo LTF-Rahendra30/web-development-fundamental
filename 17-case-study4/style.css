@@ -159,6 +159,20 @@ nav ul {
     display: block;
 }
 
+/* ------ Animation Humburger Menu when cheked ---------- */
+
+/* Top rotate 45 deg */
+.menu-toggle:checked ~ .hamburger span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+/* Mid Invisible */
+.menu-toggle:checked ~ .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+/* Bottom rotate -45 deg */
+.menu-toggle:checked ~ .hamburger span:nth-child(3) {
+transform: translateY(-8.5px) rotate(-45deg);
+}
 /* ========= MAIN ============= */
 main{
     max-width: var(--container-max-width);
