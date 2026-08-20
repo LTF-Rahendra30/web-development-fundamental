@@ -596,3 +596,14 @@ footer .footer-bottom .footer-legal{
         font-size: 1rem;
     }
 }
+
+
+/* ====== Break Point Desktop ====== */
+@media (min-width: 64em) {
+
+
+    /* ===== Layout Linup & Gallery ==== */
+    .lineup-section .lineup-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
