@@ -259,7 +259,7 @@ main .about-section .about-content p{
 .lineup-section .lineup-container .artis-card {
     display: flex;
     flex-direction: column;
-    flex: 0 0 300px;
+    width: 100%;
     text-align: center;
     align-items: center;
     gap: 25px;
@@ -273,8 +273,8 @@ main .about-section .about-content p{
 
 /* Artist Photo */
 .lineup-section .lineup-container .artis-card figure img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height:200px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid var(--color-cyan);
@@ -563,6 +563,13 @@ footer .footer-bottom .footer-legal{
         padding: 15px;
         font-size: 1rem;
     }
+
+    /* ===== Photo Size ==== */
+    /* Artist Photo */
+    .lineup-section .lineup-container .artis-card figure img{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 
@@ -629,4 +636,6 @@ footer .footer-bottom .footer-legal{
     .flooating-ticket-btn:hover {
         background-color: #facc15;
     }
+
+
 }
