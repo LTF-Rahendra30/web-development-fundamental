@@ -99,7 +99,7 @@ p{
 
 .site-header .site-title{
     flex-shrink: 0;
-    font-size: 1.8em;
+    font-size: clamp(1.1rem, 5vw, 1.8rem);
     color: var(--color-cyan);
 }
 
@@ -323,7 +323,8 @@ main .about-section .about-content p{
     background-color: var(--bg-card);
 }
 /* ---- Table Content --- */
-.schedule-section table th,td{
+.schedule-section table th,
+.schedule-section table td{
     font-size: 0.85rem;
     padding: 10px;
     color: var(--color-text-main);
@@ -356,7 +357,7 @@ main .about-section .about-content p{
 }
 
 .ticket-section .from-container{
-    min-width: 400px;
+    width: min(100%, 400px);
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -534,7 +535,7 @@ footer .footer-bottom .footer-legal{
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    box-shadow:0 4px 10x rgba(0, 0, 0, 0.3);
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 99999;
 }
 
