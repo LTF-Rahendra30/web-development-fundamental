@@ -480,7 +480,7 @@ footer .footer-top{
 
 .footer-title{
     margin-bottom: 20px;
-    color: #fff;
+    color: var(--title-main);
     text-transform: uppercase;
 }
 /* ---- Footer top Link ---- */
@@ -491,7 +491,7 @@ footer .footer-top{
     gap: 10px;
 }
 .footer-list li a{
-    color: #cbd5e1;
+    color: var(--color-text-muted);
     transition: 0.3s ease;
 }
 
