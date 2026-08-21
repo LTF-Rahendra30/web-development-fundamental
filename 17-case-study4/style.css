@@ -321,6 +321,7 @@ main .about-section .about-content p{
 }
 /* ---- Table Content --- */
 .schedule-section table th,td{
+    font-size: 0.85rem;
     padding: 10px;
     color: var(--color-text-main);
     border-bottom: 1px solid var(--border-color);
@@ -561,7 +562,7 @@ footer .footer-bottom .footer-legal{
     /* ==== Padding Tabel === */
     .schedule-section table th,.schedule-section table td{
         padding: 15px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     /* ===== Photo Size ==== */
