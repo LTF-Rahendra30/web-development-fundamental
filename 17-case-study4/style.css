@@ -583,6 +583,14 @@ footer .footer-bottom .footer-legal{
         width: 150px;
         height: 150px;
     }
+
+
+    /* ==== Footer Bottom === */
+    footer .footer-bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 
